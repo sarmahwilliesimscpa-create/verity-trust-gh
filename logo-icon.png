@@ -1,0 +1,158 @@
+export type Business = {
+  id: string;
+  name: string;
+  handle: string;
+  category: string;
+  location: string;
+  verifiedSince: string;
+  verificationId: string;
+  phone: string;
+  whatsapp: string;
+  website: string;
+  description: string;
+};
+
+// Demo directory data for the front-end prototype.
+// In production this is served by Verity's verification API.
+export const businesses: Business[] = [
+  {
+    id: "1",
+    name: "Pizza World",
+    handle: "pizzaworld",
+    category: "Restaurant",
+    location: "Osu, Accra",
+    verifiedSince: "Mar 2026",
+    verificationId: "VR-2026-00142",
+    phone: "+233 20 000 1142",
+    whatsapp: "+233 20 000 1142",
+    website: "pizzaworld.com.gh",
+    description: "Wood-fired pizza and Italian classics, delivered across Accra.",
+  },
+  {
+    id: "2",
+    name: "Kofi Electronics",
+    handle: "kofielectronics",
+    category: "Electronics",
+    location: "Adum, Kumasi",
+    verifiedSince: "Jan 2026",
+    verificationId: "VR-2026-00087",
+    phone: "+233 24 000 0087",
+    whatsapp: "+233 24 000 0087",
+    website: "kofielectronics.com",
+    description: "Phones, laptops, and home appliances with warranty support.",
+  },
+  {
+    id: "3",
+    name: "Nsawam Fresh Foods",
+    handle: "nsawamfresh",
+    category: "Grocery",
+    location: "Nsawam, Eastern Region",
+    verifiedSince: "Apr 2026",
+    verificationId: "VR-2026-00201",
+    phone: "+233 26 000 0201",
+    whatsapp: "+233 26 000 0201",
+    website: "nsawamfresh.com",
+    description: "Farm-fresh produce and groceries delivered same-day.",
+  },
+  {
+    id: "4",
+    name: "Golden Coast Logistics",
+    handle: "goldencoastlogistics",
+    category: "Delivery & Logistics",
+    location: "Takoradi, Western Region",
+    verifiedSince: "Feb 2026",
+    verificationId: "VR-2026-00119",
+    phone: "+233 27 000 0119",
+    whatsapp: "+233 27 000 0119",
+    website: "goldencoastlogistics.com",
+    description: "Reliable courier and freight services across the coast.",
+  },
+  {
+    id: "5",
+    name: "Abena Beauty Studio",
+    handle: "abenabeauty",
+    category: "Beauty & Wellness",
+    location: "East Legon, Accra",
+    verifiedSince: "May 2026",
+    verificationId: "VR-2026-00233",
+    phone: "+233 55 000 0233",
+    whatsapp: "+233 55 000 0233",
+    website: "abenabeautystudio.com",
+    description: "Hair, skin, and wellness treatments by appointment.",
+  },
+  {
+    id: "6",
+    name: "Everest Trust Bank",
+    handle: "everesttrustbank",
+    category: "Bank",
+    location: "Ridge, Accra",
+    verifiedSince: "Jun 2026",
+    verificationId: "VR-2026-00256",
+    phone: "+233 30 000 0256",
+    whatsapp: "+233 30 000 0256",
+    website: "everesttrustbank.com",
+    description: "Personal and business banking with nationwide branches.",
+  },
+  {
+    id: "7",
+    name: "Harbor View Hotel",
+    handle: "harborviewhotel",
+    category: "Hotel",
+    location: "Takoradi, Western Region",
+    verifiedSince: "Feb 2026",
+    verificationId: "VR-2026-00171",
+    phone: "+233 31 000 0171",
+    whatsapp: "+233 31 000 0171",
+    website: "harborviewhotel.com",
+    description: "Waterfront rooms and event spaces on the western coast.",
+  },
+  {
+    id: "8",
+    name: "Cedi Pharmacy",
+    handle: "cedipharmacy",
+    category: "Pharmacy",
+    location: "Spintex, Accra",
+    verifiedSince: "Mar 2026",
+    verificationId: "VR-2026-00159",
+    phone: "+233 24 000 0159",
+    whatsapp: "+233 24 000 0159",
+    website: "cedipharmacy.com",
+    description: "Licensed pharmacy with prescription delivery.",
+  },
+];
+
+export const categories: string[] = [
+  "Restaurant",
+  "Electronics",
+  "Grocery",
+  "Delivery & Logistics",
+  "Beauty & Wellness",
+  "Bank",
+  "Hotel",
+  "Pharmacy",
+];
+
+export const searchExamples = ["Pizza World", "Restaurants", "Banks", "Hotels", "Pharmacies"];
+
+export const faqs = [
+  {
+    q: "What is Verity?",
+    a: "Verity is where you find the real business you're looking for, confirm it's genuine, and connect with them directly.",
+  },
+  {
+    q: "How does Verity confirm a business is real?",
+    a: "Every business on Verity submits its details and goes through a review before appearing in search results.",
+  },
+  {
+    q: "Is it free to search for a business?",
+    a: "Yes. Searching and connecting with a business on Verity is free, with no account required.",
+  },
+  {
+    q: "What if I can't find a business?",
+    a: "It may not have joined Verity yet. You can invite the business, and we'll follow up with them directly.",
+  },
+  {
+    q: "How do I get my business on Verity?",
+    a: "Submit your business details from the For Businesses page. Once reviewed, your profile goes live for customers to find.",
+  },
+];

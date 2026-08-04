@@ -1,34 +1,33 @@
-# Verity — Trusted Business Gateway
-
-A premium, search-first website for Verity, built with Next.js 14 (App Router), TypeScript, Tailwind CSS, and Framer Motion.
-
-## Getting started
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:3000. Production build has already been verified with `npm run build`.
-
-## What's here
-
-- `/` — Home: hero search experience, Find → Trust → Connect journey, For Businesses teaser
-- `/search` — Full verified business directory with category filters
-- `/for-businesses` — Benefits, verification journey, and application form
-- `/contact` — Support form (accepts `?invite=BusinessName` to prefill an invite message)
-- `/resources` — Help Center with FAQ accordion
-
-## Data
-
-`lib/data.ts` holds demo directory data (businesses, categories, FAQs) so the search experience is fully interactive out of the box. Replace this with real API calls to Verity's verification backend when ready — the search, filter, and form logic are already isolated so this is a drop-in swap.
-
-## Forms
-
-The application and contact forms currently simulate submission client-side (see the `TODO` comments in `app/for-businesses/page.tsx` and `app/contact/page.tsx`). Wire these to your backend, CRM, or an email service (e.g. Resend, Formspree) before going live.
-
-## Brand
-
-- Colors, type scale, and spacing live in `tailwind.config.ts`
-- Fonts are self-hosted via `@fontsource` (Inter for UI, Manrope for display, IBM Plex Mono for small labels/IDs) — no external font requests at runtime
-- The logo mark is cropped from the provided brand asset at `public/logo-icon.png` (icon) and `public/logo-full.png` (full lockup)
+{
+  "name": "verity",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "framer-motion": "11.3.19",
+    "lucide-react": "0.417.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.13",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "postcss": "8.4.40",
+    "tailwindcss": "3.4.7",
+    "typescript": "5.5.4"
+  }
+}
